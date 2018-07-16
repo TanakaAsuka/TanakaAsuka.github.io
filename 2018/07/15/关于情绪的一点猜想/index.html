@@ -91,18 +91,22 @@
                 </ul>
             
         </div>
-        
-    <div id='gitalk-container' class="comment link"
-        data-ae='false'
-        data-ci=''
-        data-cs=''
-        data-r=''
-        data-o=''
-        data-a=''
-        data-d='false'
-    >查看评论</div>
-
-
+	
+        <div id="gitalk-container"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script>
+new Valine({
+    el: '#gitalk-container' ,
+    notify:false, 
+    verify:false, 
+    appId: 'GNuFFfuAVREjPLMglWS5Xl9u-gzGzoHsz',
+    appKey: 'TX9IJNFzohKrKi1QlmOYamq6',
+    placeholder: '来一发(。・∀・)ノ',
+    path:window.location.pathname, 
+    avatar:'mm' 
+});
+</script>
     </div>
     
         <div class='side'>
